@@ -1,9 +1,13 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
-import header from './_component/header'
+import Header from './_component/header'
+import Hero from './_component/hero'
 function page() {
   return (
-    <div>Heloo Thetre</div>
+    <div>
+      <Header/>
+      <Hero/>
+    </div>
   )
 }
 export default page
