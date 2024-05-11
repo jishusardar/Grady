@@ -111,7 +111,6 @@ function Gradescreen({ params }) {
         <Addgrades teamId={params.id} refreshData={() => getTeamsInfo()} />
       </div>
       <div className='mt-4'>
-        <h2 className='font-bold text-lg'>Latest transaction</h2>
         <GradeListTable gradesList={gradesList} refreshData={() => getTeamsInfo()} />
       </div>
     </div>

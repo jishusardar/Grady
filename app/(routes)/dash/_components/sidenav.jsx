@@ -25,12 +25,6 @@ function Sidenav() {
       name:'Grades',
       icon:BookPlus,
       path:'/dash/grades'
-    },
-    {
-      id:4,
-      name:'Participants',
-      icon:UserRoundSearch,
-      path:'/dash/participants'
     }
   ]
   const path=usePathname();
