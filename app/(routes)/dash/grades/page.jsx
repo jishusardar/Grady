@@ -42,6 +42,7 @@ function GradesTableser() {
         points: Grades.points,
       }).from(Teams)
         .rightJoin(Grades, eq(Teams.id, Grades.TeamId))
+        .where(eq(Grades.createdBy, user.primaryEmailAddress.emailAddress))
         .orderBy(desc(Grades.id));
 
       setgradesList(result);

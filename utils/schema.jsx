@@ -13,5 +13,6 @@ export const Grades=pgTable('grade',{
     id:serial('id').primaryKey(),
     name:varchar('Judgename').notNull(),
     points:numeric('points').notNull().default(0),
-    TeamId:integer('TeamId').references(()=>Teams.id)
+    TeamId:integer('TeamId').references(()=>Teams.id),
+    createdBy:varchar('createdBy').notNull()
 })

@@ -47,6 +47,8 @@ function Dash() {
         points: Grades.points,
       }).from(Teams)
         .rightJoin(Grades, eq(Teams.id, Grades.TeamId))
+        .where(eq(Grades.createdBy, user?.primaryEmailAddress?.emailAddress))
+        .groupBy(Grades.id)
         .orderBy(desc(Grades.id));
 
       setgradesList(result);

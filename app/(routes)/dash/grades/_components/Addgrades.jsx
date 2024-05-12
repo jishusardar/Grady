@@ -5,17 +5,21 @@ import React, { useState } from 'react'
 import { Grades } from '@/utils/schema'
 import { Teams } from '@/utils/schema'
 import { toast } from 'sonner'
+import { useUser } from '@clerk/nextjs'
 
 function Addgrades({teamId,refreshData}) {
    const [name,setName]=useState();
    const [points,setPoints]=useState();
+
+   const {user}=useUser();
 
     const addNewMarks=async()=>{
         const result=await db.insert(Grades)
         .values({
             name:name,
             points:points,
-            TeamId:teamId
+            TeamId:teamId,
+            createdBy:user?.primaryEmailAddress?.emailAddress
         }).returning({insertedId:Teams.id});
         console.log(result);
         if(result)
