@@ -11,11 +11,11 @@ function Hero() {
       >
         Get Ready For Grady
 
-        <span className="sm:block"> :The Smart Grade Calculator</span>
+        <span className="sm:block"> :The Smart Grade Analytical Tool</span>
       </h1>
 
       <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-        Grady Is A Platform For Calculation Of Grades
+        Grady Is A Grade Analytical Tool
       </p>
 
       <div className="mt-8 flex flex-wrap justify-center gap-4">
