@@ -1,4 +1,3 @@
-"use client"
 import React from 'react'
 import Image from 'next/image'
 
@@ -36,9 +35,7 @@ function Hero() {
       </div>
     </div>
   </div>
-<div>
-  <Image src='/dashboard-min.png' alt='Dashboard' width={1000} height={700} className='-mt-9 rounded-xl border-2'/>
-</div>
+  <Image src={'./dashboard-min.png'} alt='Dashboard' width={1000} height={700} className='-mt-9 rounded-xl border-2'/>
 </section>
   )
 }
