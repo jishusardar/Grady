@@ -1,4 +1,3 @@
-"use client"
 import React from 'react'
 import Image from 'next/image'
 
@@ -12,7 +11,7 @@ function Hero() {
       >
         Get Ready For Grady
 
-        <span className="sm:block"> :The Smart Grade Analytical Tool</span>
+        <span className="sm:block"> :The Grade Analytical Tool</span>
       </h1>
 
       <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
@@ -36,8 +35,10 @@ function Hero() {
       </div>
     </div>
   </div>
-  <Image src={'./dashboard-min.png'} alt='Dashboard' width={1000} height={700} className='-mt-9 rounded-xl border-2'/>
 </section>
+    <div>
+    <Image src={'./dashboard-min.png'} alt='Dashboard' width={1000} height={700} className='-mt-9 rounded-xl border-2'/>
+    </div>
   )
 }
 
