@@ -21,7 +21,7 @@ function Hero() {
       <div className="mt-8 flex flex-wrap justify-center gap-4">
         <a
           className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-purple-600 hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-          href="./sign-up"
+          href="./sign-in"
         >
           Sign In
         </a>
@@ -35,7 +35,7 @@ function Hero() {
       </div>
     </div>
   </div>
-  <Image src='/dashboard.png' alt="Seems You haven't Logged In yet" width={1000} height={700} className='-mt-9 rounded-xl border-2'/>
+  <Image src='/dashboard.png' alt="Seems Like You Haven't Signed Up yet" width={1000} height={700} className='-mt-9 rounded-xl border-2'/>
 </section>
   )
 }
