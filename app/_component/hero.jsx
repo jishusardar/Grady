@@ -35,7 +35,7 @@ function Hero() {
       </div>
     </div>
   </div>
-  <Image src='/dashboard.png' alt='Seems You haven't Logged In yet' width={1000} height={700} className='-mt-9 rounded-xl border-2'/>
+  <Image src='/dashboard.png' alt="Seems You haven't Logged In yet" width={1000} height={700} className='-mt-9 rounded-xl border-2'/>
 </section>
   )
 }
