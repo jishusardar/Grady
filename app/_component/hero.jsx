@@ -6,7 +6,8 @@ import { useUser } from '@clerk/nextjs'
 function Hero() {
   const {user,isSignedIn}=useUser();
   return (
-    <section className="bg-gray-50 flex items-center flex-col">
+    <section>
+      <div className="bg-gray-50 flex items-center flex-col">
       <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex">
         <div className="mx-auto max-w-3xl text-center">
           <h1
@@ -42,6 +43,7 @@ function Hero() {
       {isSignedIn?
       <Image src='/dashboard.png' alt="Seems Like You Haven't Signed Up yet" width={1000} height={700} className='-mt-9 rounded-xl border-2' />:
       <Image src='/dashboard.png' alt="Seems Like You Haven't Signed Up yet" width={1000} height={700} className='-mt-9 rounded-xl border-2' />}
+      </div>
     </section>
   )
 }
