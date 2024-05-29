@@ -30,7 +30,7 @@ function Hero() {
         className="block w-full rounded bg-sky-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-sky-700 focus:outline-none focus:ring active:bg-sky-500 sm:w-auto"
         href="./sign-in"
       >
-        SignIn
+        Sign In
       </a>
         }
       </div>
