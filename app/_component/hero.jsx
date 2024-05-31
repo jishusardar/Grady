@@ -2,6 +2,8 @@
 import React from 'react'
 import Image from 'next/image'
 import { useUser } from '@clerk/nextjs'
+import { redirect } from 'next/navigation'
+
 
 function Hero() {
   const {user,isSignedIn}=useUser();
@@ -19,13 +21,7 @@ function Hero() {
       </p>
 
       <div className="mt-8 flex flex-wrap justify-center gap-4">
-      {isSignedIn ?
-        <a
-          className="block w-full rounded bg-sky-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-sky-700 focus:outline-none focus:ring active:bg-sky-500 sm:w-auto"
-          href="./dash"
-        >
-          Dashboard
-        </a>:
+      {isSignedIn ? redirect('/dash'):
         <a
         className="block w-full rounded bg-sky-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-sky-700 focus:outline-none focus:ring active:bg-sky-500 sm:w-auto"
         href="./sign-in"
