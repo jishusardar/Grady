@@ -16,38 +16,6 @@ function Dash() {
   const { user } = useUser();
   const [teamList, setteamsList] = useState([]);
   const [gradesList, setgradesList] = useState([]);
-  const isRedirectingRef = useRef(false);
-  const [isRedirecting, setIsRedirecting] = useState(false);
-  const router = useRouter();
-  useEffect(() => {
-    const handleRouteChangeStart = () => {
-      isRedirectingRef.current = true;
-      setIsRedirecting(true);
-    };
-
-    const handleRouteChangeComplete = () => {
-      isRedirectingRef.current = false;
-      setIsRedirecting(false);
-    };
-
-    router?.events?.on('routeChangeStart', handleRouteChangeStart);
-    router?.events?.on('routeChangeComplete', handleRouteChangeComplete);
-    router?.events?.on('routeChangeError', handleRouteChangeComplete);
-
-    return () => {
-      router?.events?.off('routeChangeStart', handleRouteChangeStart);
-      router?.events?.off('routeChangeComplete', handleRouteChangeComplete);
-      router?.events?.off('routeChangeError', handleRouteChangeComplete);
-    };
-  }, [router]);
-
-  const handleRedirect = () => {
-    router.push('/');
-  };
-
-  if (isRedirecting) {
-    return <SkeletonLoader />;
-  }
   useEffect(() => {
     if (user) {
       getTeamList();
