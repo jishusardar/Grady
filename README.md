@@ -61,19 +61,10 @@ Grady is a platform for calculating and visualizing grades.  It allows users to 
 4. Navigate to the dashboard to view your teams, add new teams, and manage grades.
 
 
-## API Documentation
-
-Not applicable. This application does not expose a public API.
-
 
 ## Contributing Guidelines
 
 Contributions are welcome! Please open an issue or submit a pull request.  Follow standard Git workflow conventions.
-
-
-## License Information
-
-License is not specified in the provided files.
 
 
 ## Contact/Support Information
