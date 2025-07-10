@@ -60,7 +60,6 @@ function Hero() {
                       <p>Created With &#10084; Grady</p>
                     </div>
                 </div>
-               
             </div>
         </div>
         <div>
