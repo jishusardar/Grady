@@ -5,6 +5,7 @@ import {BookPlus,BarChartBig,UsersRound,UserRoundSearch} from 'lucide-react'
 import { UserButton } from '@clerk/nextjs'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Logo from '@/app/_component/Logo'
 
 function Sidenav() {
   const menuList=[
@@ -34,11 +35,7 @@ function Sidenav() {
   },[path])
   return (
     <div className='h-screen p-5 border shadow-sm'>
-      <Image src={'/logo.svg'}
-      alt='logo'
-      height={100}
-      width={160}
-      />
+      <Logo/>
       <div className='mt-5'>
         {menuList.map((menu,index)=>(
           <Link href={menu.path}>
