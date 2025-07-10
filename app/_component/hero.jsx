@@ -40,7 +40,7 @@ function Hero() {
                               </span>
                         </a>
                     </div>
-                    <div className="hidden py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between">
+                    <div className=" hidden py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between">
                         <div className="text-left">
                             <h6 className="text-lg font-semibold text-gray-700 dark:text-white">The Pros</h6>
                             <p className="mt-2 text-gray-500"> Stay Organised</p>
@@ -56,7 +56,7 @@ function Hero() {
                             <p className="mt-2 text-gray-500">Not Available Currently</p>
                         </div>
                     </div>
-                    <div>
+                    <div className='mt-2 text-500'>
                       <p>Created With &#10084; Grady</p>
                     </div>
                 </div>
