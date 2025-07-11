@@ -5,6 +5,7 @@ import Header from './_component/header'
 import Hero from './_component/hero'
 import React, { useEffect, useState } from 'react'
 import { useUser } from '@clerk/nextjs'
+import Footer from './_component/footer'
 function page() {
   const { user }=useUser();
   useEffect(() => {
@@ -16,6 +17,7 @@ function page() {
     <div>
       <Header/>
       <Hero/>
+      <Footer/>
     </div>
   )
 }
