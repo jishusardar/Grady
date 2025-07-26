@@ -4,7 +4,9 @@ import React from 'react'
 function DashboardHeader() {
   return (
     <div className='p-5 shadow-sm border-b flex justify-between'>
-        <div className='font-bold cursor-pointer'>        
+      <div>
+        <div className='flex justify-between block sm:hidden gap-20'>
+        <div className='font-bold cursor-pointer '>        
         <a href='/dash'>DashBoard</a>
         </div>
         <div className='font-bold cursor-pointer'>
@@ -13,6 +15,8 @@ function DashboardHeader() {
         <div className='font-bold cursor-pointer'>
           <a href='/dash/grades'>Grades</a>
         </div>
+      </div>
+      </div>
         <div>
             <UserButton/>
         </div>

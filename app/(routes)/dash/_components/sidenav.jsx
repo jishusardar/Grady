@@ -39,10 +39,10 @@ function Sidenav() {
       <div className='mt-5'>
         {menuList.map((menu,index)=>(
           <Link href={menu.path}>
-          <h2 className={`flex gap-2 items-center text-sky-500 font-medium
+          <h2 className={`flex gap-2 items-center text-black font-medium
           mb-2 
-          p-5 cursor-pointer rounded-md hover:text-white hover:bg-sky-300
-          ${path==menu.path&&'text-white bg-sky-300'}`}>
+          p-5 cursor-pointer rounded-md hover:text-white hover:bg-black
+          ${path==menu.path&&'text-white bg-black'}`}>
             <menu.icon/>
             {menu.name}
           </h2>

@@ -15,21 +15,21 @@ function CardsInfo(teamList) {
                         <h2 className='text-sm'>Total Teams</h2>
                         <h2 className='font-bold text-2xl'>0</h2>
                     </div>
-                    <UsersRound className='bg-sky-500 p-3 h-12 w-12 rounded-full  text-white' />
+                    <UsersRound className='bg-black p-3 h-12 w-12 rounded-full  text-white' />
                 </div>
                 <div className='p-7 border rounded-lg flex items-center justify-between'>
                     <div>
                         <h2 className='text-sm'>Marked</h2>
                         <h2 className='font-bold text-2xl'>0</h2>
                     </div>
-                    <ListChecks className='bg-sky-500 p-3 h-12 w-12 rounded-full  text-white' />
+                    <ListChecks className='bg-black p-3 h-12 w-12 rounded-full  text-white' />
                 </div>
                 <div className='p-7 border rounded-lg flex items-center justify-between'>
                     <div>
                         <h2 className='text-sm'>Unmarked</h2>
                         <h2 className='font-bold text-2xl'>0</h2>
                     </div>
-                    <UsersRound className='bg-sky-500 p-3 h-12 w-12 rounded-full  text-white' />
+                    <UsersRound className='bg-black p-3 h-12 w-12 rounded-full  text-white' />
                 </div>
             </div>
             :
