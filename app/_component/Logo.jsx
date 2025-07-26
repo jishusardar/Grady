@@ -9,5 +9,4 @@ function Logo() {
     </Link>
   )
 }
-
 export default Logo

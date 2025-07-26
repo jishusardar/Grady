@@ -30,16 +30,16 @@ function Addgrades({teamId,refreshData}) {
     }
     return (
         <div className='border p-5  rounded-lg'>
-            <h2 className='font-bold text-sky-400 text-lg'>Add Grades</h2>
+            <h2 className='font-bold text-black text-lg'>Add Grades</h2>
             <div className='mt-2'>
-                <h2 className='text-sky-400 font-medium my-1'>Judge Id/Name</h2>
+                <h2 className='text-black font-medium my-1'>Judge Id/Name</h2>
                 <Input placeholder="e.g. J.sardar/Judge 1" onChange={(e) => setName(e.target.value)} />
             </div>
             <div className='mt-2'>
-                <h2 className='text-sky-400 font-medium my-1'>Marks</h2>
+                <h2 className='text-black font-medium my-1'>Marks</h2>
                 <Input  type="number"placeholder="Entre Marks" onChange={(e)=>setPoints(e.target.value)}/>
             </div>
-            <Button disabled={!(name)} onClick={()=>addNewMarks()} className="mt-3 w-full text-white bg-sky-500
+            <Button disabled={!(name)} onClick={()=>addNewMarks()} className="mt-3 w-full text-white bg-black
             hover:bg-black hover:text-sky-500
             ">Add Marks</Button>
         </div>

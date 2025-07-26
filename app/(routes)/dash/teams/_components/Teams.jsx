@@ -29,7 +29,7 @@ function TeamsListss({team}) {
           <h2 className='text-xs text-slate-400'>Max: {team.points}</h2>
         </div>
         <div className='w-full bg-slate-300 h-2 rounded-full'>
-          <div className='bg-sky-500 h-2 rounded-full' style={{width:`${calculateProgressperc()}%`}}></div>
+          <div className='bg-black h-2 rounded-full' style={{width:`${calculateProgressperc()}%`}}></div>
         </div>
       </div>
       </div>

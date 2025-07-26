@@ -15,8 +15,8 @@ function BarChartDash({teamList}) {
        <YAxis/>
        <Tooltip/>
        <Legend/>
-       <Bar dataKey='totalsum' stackId="a" fill='#6495ED'/>
-       <Bar dataKey='points' stackId="a" fill='#FDFBFA'/>
+       <Bar dataKey='totalsum' stackId="a" fill='#180501'/>
+       <Bar dataKey='points' stackId="a" fill='#FFFFFF'/>
       </BarChart>
       </ResponsiveContainer>
     </div>
