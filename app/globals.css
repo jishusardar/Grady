@@ -64,6 +64,9 @@
       --input: 0 0% 14.9%;
       --ring: 0 0% 83.1%;
     }
+  .theme {
+        --animate-pulse: pulse var(--duration) ease-out infinite;
+    }
   }
 
   @layer base {
@@ -74,3 +77,14 @@
       @apply bg-background text-foreground;
     }
   }
+
+  @theme inline {
+  @keyframes pulse {
+  0%, 100% {
+    boxShadow: 0 0 0 0 var(--pulse-color);
+        }
+  50% {
+    boxShadow: 0 0 0 8px var(--pulse-color);
+        }
+    }
+}
