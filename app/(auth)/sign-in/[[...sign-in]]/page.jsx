@@ -6,7 +6,7 @@ export default function Page() {
       <div className="relative flex w-full flex-col overflow-y-auto">
         <StickyBanner className="bg-gradient-to-b from-black to-blue-600">
           <p className="mx-0 max-w-[90%] text-white drop-shadow-md">
-            For Recuiters only Use this{" "}
+            For Demo Login use {" "}
             <a
               href="#"
               className="transition duration-200 hover:underline"
